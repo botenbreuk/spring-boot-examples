@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class HtmlFileExecutor {
 
-    public void start() {
+    public void run() {
         try {
             if (Desktop.isDesktopSupported()) {
                 Desktop desktop = Desktop.getDesktop();

@@ -29,7 +29,7 @@ public class SpringBootExamples {
 
     private static void startContextExampleOne(String[] args) {
         ApplicationContext applicationContext = SpringApplication.run(SpringBootExamples.class, args);
-        applicationContext.getBean(HtmlFileExecutor.class).start();
+        applicationContext.getBean(Application.class).start();
     }
 
     private static void startContextExampleTwo(String[] args) {
@@ -37,6 +37,6 @@ public class SpringBootExamples {
                 .headless(false)
                 .run(args);
 
-        EventQueue.invokeLater(() -> context.getBean(HtmlFileExecutor.class).start());
+        EventQueue.invokeLater(() -> context.getBean(HtmlFileExecutor.class).run());
     }
 }
