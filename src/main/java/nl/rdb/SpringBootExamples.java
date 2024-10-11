@@ -4,6 +4,7 @@ import java.awt.*;
 import java.util.Arrays;
 
 import lombok.extern.slf4j.Slf4j;
+import nl.rdb.files.HtmlFileExecutor;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -19,18 +20,16 @@ public class SpringBootExamples {
     public static void main(String[] args) {
         if (args.length == 0 || Arrays.asList(args).contains("context-one")) {
             startContextExampleOne(args);
-        }
-
-        if (Arrays.asList(args).contains("context-two")) {
+        } else if (Arrays.asList(args).contains("context-two")) {
             startContextExampleTwo(args);
+        } else {
+            log.info("Could not find context!");
         }
-
-        log.info("Could not find context!");
     }
 
     private static void startContextExampleOne(String[] args) {
         ApplicationContext applicationContext = SpringApplication.run(SpringBootExamples.class, args);
-        applicationContext.getBean(Application.class).start();
+        applicationContext.getBean(HtmlFileExecutor.class).start();
     }
 
     private static void startContextExampleTwo(String[] args) {
@@ -38,6 +37,6 @@ public class SpringBootExamples {
                 .headless(false)
                 .run(args);
 
-        EventQueue.invokeLater(() -> context.getBean(Application.class).start());
+        EventQueue.invokeLater(() -> context.getBean(HtmlFileExecutor.class).start());
     }
 }
