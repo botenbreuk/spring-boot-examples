@@ -1,4 +1,4 @@
-package nl.rdb.schedule;
+package nl.rdb.spring_boot_examples.schedule;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

@@ -1,10 +1,10 @@
-package nl.rdb;
+package nl.rdb.spring_boot_examples;
 
 import java.awt.*;
 import java.util.Arrays;
 
 import lombok.extern.slf4j.Slf4j;
-import nl.rdb.files.HtmlFileExecutor;
+import nl.rdb.spring_boot_examples.files.HtmlFileExecutor;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

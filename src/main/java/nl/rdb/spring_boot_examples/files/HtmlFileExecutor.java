@@ -1,4 +1,4 @@
-package nl.rdb.files;
+package nl.rdb.spring_boot_examples.files;
 
 import java.awt.*;
 

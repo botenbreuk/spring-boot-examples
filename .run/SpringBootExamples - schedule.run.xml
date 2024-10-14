@@ -2,7 +2,7 @@
   <configuration default="false" name="SpringBootExamples - schedule" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
     <option name="ACTIVE_PROFILES" value="schedule" />
     <module name="spring-boot-examples" />
-    <option name="SPRING_BOOT_MAIN_CLASS" value="nl.rdb.SpringBootExamples" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="nl.rdb.spring_boot_examples.SpringBootExamples" />
     <option name="VM_PARAMETERS" value="-cp $Classpath$:src/test/resources" />
     <method v="2">
       <option name="Make" enabled="true" />

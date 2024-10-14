@@ -1,4 +1,4 @@
-package nl.rdb.config;
+package nl.rdb.spring_boot_examples.config;
 
 import lombok.Getter;
 import lombok.Setter;
