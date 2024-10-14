@@ -1,0 +1,33 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "age" : {
+      "type" : "integer"
+    },
+    "name" : {
+      "type" : "string"
+    },
+    "pets" : {
+      "type" : "array",
+      "items" : {
+        "type" : "object",
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          },
+          "type" : {
+            "type" : "string",
+            "enum" : [ "DOG", "CAT", "BIRD" ]
+          }
+        },
+        "required" : [ "name", "type" ],
+        "title" : "Pet",
+        "description" : ""
+      }
+    }
+  },
+  "required" : [ "age", "name", "pets" ],
+  "title" : "User object",
+  "description" : "User object description"
+}
