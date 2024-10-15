@@ -1,6 +1,7 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="SpringBootExamples" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
     <module name="spring-boot-examples" />
+    <option name="PROGRAM_PARAMETERS" value="context-one" />
     <option name="SPRING_BOOT_MAIN_CLASS" value="nl.rdb.spring_boot_examples.SpringBootExamples" />
     <option name="VM_PARAMETERS" value="-cp $Classpath$:src/test/resources" />
     <method v="2">
