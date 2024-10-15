@@ -4,7 +4,7 @@ import java.awt.*;
 import java.util.Arrays;
 
 import lombok.extern.slf4j.Slf4j;
-import nl.rdb.spring_boot_examples.files.HtmlFileExecutor;
+import nl.rdb.spring_boot_examples.javafx.GUILauncher;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -37,6 +37,6 @@ public class SpringBootExamples {
                 .headless(false)
                 .run(args);
 
-        EventQueue.invokeLater(() -> context.getBean(HtmlFileExecutor.class).run());
+        EventQueue.invokeLater(() -> context.getBean(GUILauncher.class).run(args));
     }
 }
